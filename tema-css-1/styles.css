@@ -1,0 +1,21 @@
+label {
+    color: skyblue;
+}
+input[type="text"] {
+    border: 2px solid green;
+}
+input[type="email"] {
+    background: blue;
+}
+input[type="submit"] {
+    background: green;
+}
+input[type="reset"] {
+    background: green;
+}
+body {
+    background-color: salmon;
+}
+form {
+    background-color: white;
+}
