@@ -1,0 +1,43 @@
+
+body {
+    margin: 0;
+}
+#main {
+    display: flex;
+}
+
+#top {
+    background-color: turquoise;
+}
+#bottom {
+    background-color: orange;
+}
+#vertical > div {
+    width: 650px;
+    height: 350px;
+}
+#middle {
+    display: flex;
+    width: 700px;
+    height: 800px;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+}
+#tall {
+    display: flex;
+    /* flex-grow: 1;     */
+    width: 500px;
+    height: 100%;
+    background-color: green;
+}
+#wide {
+    width: 500px;
+    height: 400px;
+    background-color: red;
+
+}
+img {
+    width: 640px;
+    height: 480px;
+}
