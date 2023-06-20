@@ -1,0 +1,37 @@
+.parent {
+    background-color: rgb(187, 201, 184);
+    width: 350px;
+    height: 130px;
+    border: 2px dotted red;
+    border-radius: 6px;
+    text-align: center;
+    position: relative;
+}
+.child {
+    width: 130px;
+    height: 90px;
+    border-radius: 6px;
+    border: 1.5px dotted red; 
+}
+.child1 {
+    background-color: rgb(81, 141, 138);
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.child2 {
+    background-color: rgb(163, 145, 164);
+    top: 30%;
+    left: 28%;
+    position: absolute;
+    z-index: 1;    
+}
+.child3 {
+    top: 16%;
+    right: 8px;
+    background-color: rgb(168, 169, 124);
+    position: absolute;
+}
+h2 {
+    font-size: 18px;
+}

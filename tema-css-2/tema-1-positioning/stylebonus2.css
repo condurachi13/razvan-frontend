@@ -1,0 +1,27 @@
+#parinte {
+    background-color: lightgrey;
+    width: 300px;
+    height: 300px;
+    position: absolute;  
+}
+#yellow {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform: translate(100%, 100%); /* Bonus nr. 2 */
+}
+#blue {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    transform: translate(50%, 50%);
+    position: relative;
+}
+#green {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform: translate(50%, 50%);
+}
