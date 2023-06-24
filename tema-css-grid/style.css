@@ -7,53 +7,86 @@ body {
     width: 320px;
     height: 600px;
     align-items: center;
-    border: 1px solid red;
-    grid-template-columns: repeat(8, 40px); 
-    grid-template-rows: repeat(10, 60px);
+    grid-template-columns: repeat(8, 1fr); 
+    grid-template-rows: repeat(10, 1fr);
+    background-color: rgb(201, 201, 201);
+    gap: 3px;
+    padding: 5px;
+    
 }
 .alb {
     background-color: white;
-}
-.tab {
-    background-color: grey;
-}
-.gri {
-    background-color: lightgray;
-}
-.calc {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
     width: 100%;
     height: 100%;
-    place-self: bottom;
+}
+
+.gri {
+    background-color: rgb(221, 221, 221);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    width: 100%;
+    height: 100%;
 }
 .calc {
     grid-area: 1 / 1 / 1 / 6;
+    align-self: flex-start;
+    width: 100%;
+    height: 100%;
+    
 }
 .minus-bar {
     grid-area: 1 / 6 / 1 / 6;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: baseline;
 }
 .square-bar {
     grid-area: 1 / 7 / 1 / 7;
+    text-align: center;
+    vertical-align: baseline;
+    width: 100%;
+    height: 100%;
+}
+.x-bar {
+    padding-top: 4px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: baseline;
 }
 .menu {
     align-self: flex-start;
+    font-size: 25px;
 }
 .standard {
     grid-area: 2 / 2 / 2 / 8;
     align-self: flex-start;
+    font-size: 25px;
 }
 .circle {
     justify-self: center;
     align-self: flex-start;
+    font-size: 25px;
 }
 .equal {
-    justify-self: end;
+    justify-self: flex-end;
     align-self: flex-end;
     font-size: 40px;
     grid-area: 3 / 1 / 3 / 9;    
 }
 .egal {
     grid-area: 10 / 7 / 10 / 9;
-    justify-self: center;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(50, 163, 255);
 }
 .punct {
     grid-area: 10 / 5 / 10 / 7;
@@ -147,5 +180,51 @@ body {
     grid-area: 5 / 1 / 5 / 3;
     justify-self: center;
 }
-
-
+.m {
+    grid-area: 4 / 8 / 4 / 9;
+    justify-self: start;
+    color: rgb(143, 143, 143);
+}
+.mc {
+    justify-self: flex-end;
+}
+.mr {
+    grid-area: 4 / 2 / 4 / 4;
+    justify-self: center;
+}
+.ms {
+    grid-area: 4 / 6 / 4 / 8;
+    justify-self: center;
+}
+.mminus {
+    grid-area: 4 / 5 / 4 / 6;
+    justify-self: flex-end;
+}
+.mplus {
+    grid-area: 4 / 4 / 4 / 5;
+    justify-self: flex-start;
+}
+.empty {
+    grid-area: 3 / 1 / 4 / 3;
+    visibility: hidden;    
+}
+.alb:hover {
+    background-color: grey;
+    color: white;
+}
+.gri:hover {
+    background-color: rgb(111, 156, 201);
+    color: white;
+}
+.egal:hover {
+    background-color: brown;
+    color: orange;
+}
+.tab:hover {
+    background-color: turquoise;
+    color: grey;
+}
+.minclose:hover {
+    background-color: red;
+    color: aqua;
+}
