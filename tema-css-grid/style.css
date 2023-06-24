@@ -10,3 +10,12 @@ body {
     grid-template-columns: repeat(6, 60px);
     grid-template-rows: repeat(10, 60px);
 }
+.alb {
+    background-color: white;
+}
+.tab {
+    background-color: grey;
+}
+.gri {
+    background-color: lightgray;
+}
