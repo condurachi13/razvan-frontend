@@ -67,3 +67,85 @@ body {
     grid-area: 10 / 1 / 10 / 3;
     justify-self: center;
 }
+.plus {
+    grid-area: 9 / 7 / 9 / 9;
+    justify-self: center;
+}
+.trei {
+    grid-area: 9 / 5 / 9 / 7;
+    justify-self: center;
+}
+.doi {
+    grid-area: 9 / 3 / 9 / 5;
+    justify-self: center;
+}
+.unu {
+    grid-area: 9 / 1 / 9 / 3;
+    justify-self: center;
+}
+.minus {
+    grid-area: 8 / 7 / 8 / 9;
+    justify-self: center;
+}
+.sase {
+    grid-area: 8 / 5 / 8 / 7;
+    justify-self: center;
+}
+.cinci {
+    grid-area: 8 / 3 / 8 / 5;
+    justify-self: center;
+}
+.patru {
+    grid-area: 8 / 1 / 8 / 3;
+    justify-self: center;
+}
+.ori {
+    grid-area: 7 / 7 / 7 / 9;
+    justify-self: center;
+}
+.noua {
+    grid-area: 7 / 5 / 7 / 7;
+    justify-self: center;
+}
+.opt {
+    grid-area: 7 / 3 / 7 / 5;
+    justify-self: center;
+}
+.sapte {
+    grid-area: 7 / 1 / 7 / 3;
+    justify-self: center;
+}
+.divide {
+    grid-area: 6 / 7 / 6 / 9;
+    justify-self: center;
+}
+.doipex {
+    grid-area: 6 / 5 / 6 / 7;
+    justify-self: center;
+}
+.xpatrat {
+    grid-area: 6 / 3 / 6 / 5;
+    justify-self: center;
+}
+.unupex {
+    grid-area: 6 / 1 / 6 / 3;
+    justify-self: center;
+}
+.delete {
+    grid-area: 5 / 7 / 5 / 9;
+    justify-self: center;
+}
+.c {
+    grid-area: 5 / 5 / 5 / 7;
+    justify-self: center;
+}
+.ce {
+    grid-area: 5 / 3 / 5 / 5;
+    justify-self: center;
+}
+.percent {
+    grid-area: 5 / 1 / 5 / 3;
+    justify-self: center;
+}
+
+
