@@ -3,11 +3,12 @@ body {
     height: 1000px;
 }
 .main {
-    width: 360px;
-    height: 600px;
-    border: 1px solid red;
     display: grid;
-    grid-template-columns: repeat(6, 60px);
+    width: 320px;
+    height: 600px;
+    align-items: center;
+    border: 1px solid red;
+    grid-template-columns: repeat(8, 40px); 
     grid-template-rows: repeat(10, 60px);
 }
 .alb {
@@ -18,4 +19,51 @@ body {
 }
 .gri {
     background-color: lightgray;
+}
+.calc {
+    width: 100%;
+    height: 100%;
+    place-self: bottom;
+}
+.calc {
+    grid-area: 1 / 1 / 1 / 6;
+}
+.minus-bar {
+    grid-area: 1 / 6 / 1 / 6;
+}
+.square-bar {
+    grid-area: 1 / 7 / 1 / 7;
+}
+.menu {
+    align-self: flex-start;
+}
+.standard {
+    grid-area: 2 / 2 / 2 / 8;
+    align-self: flex-start;
+}
+.circle {
+    justify-self: center;
+    align-self: flex-start;
+}
+.equal {
+    justify-self: end;
+    align-self: flex-end;
+    font-size: 40px;
+    grid-area: 3 / 1 / 3 / 9;    
+}
+.egal {
+    grid-area: 10 / 7 / 10 / 9;
+    justify-self: center;
+}
+.punct {
+    grid-area: 10 / 5 / 10 / 7;
+    justify-self: center;
+}
+.zero {
+    grid-area: 10 / 3 / 10 / 5;
+    justify-self: center;
+}
+.plusminus {
+    grid-area: 10 / 1 / 10 / 3;
+    justify-self: center;
 }
