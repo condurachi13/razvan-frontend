@@ -1,0 +1,12 @@
+body {
+    width: 1000px;
+    height: 1000px;
+}
+.main {
+    width: 360px;
+    height: 600px;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(6, 60px);
+    grid-template-rows: repeat(10, 60px);
+}
