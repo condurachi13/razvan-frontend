@@ -1,0 +1,35 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 100px);
+    grid-template-rows: repeat(10, 100px);
+    width: 1000px;
+    height: 1000px;
+    background-color: black;
+    gap: 2px;
+}
+.a {
+    background-color: white;
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+
+}
+.b {
+    background-color: white;
+    grid-column: 1 / 3;
+    grid-row: 4 / 8;
+}
+.c {
+    background-color: red;
+    grid-column: 3 / 11;
+}
+.d {
+    background-color: blue;
+    grid-column: 1 / 3;
+    grid-row: 7 / 11;
+}
+.e {
+    background-color: white;
+    grid-column: 3 / 9;
+    grid-row: 9 / 11;
+}
+
