@@ -1,0 +1,111 @@
+body {
+    width: 800px;
+    height: 800px;
+}
+.main {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+.tabmenu {
+    text-align: center;
+    align-self: self-end;
+}
+.recently {
+    text-align: start;
+    align-self: self-end;
+    grid-area: 1 / 2 / 1 / 8;
+}
+.productivity {
+    text-align: start;
+    align-self: self-end;
+    grid-area: 1 / 8 / 1 / 17;
+}
+.power {
+    grid-area: 18 / 1 / 18 / 1;
+}
+.powerimg {
+    width: 50%;
+}
+.settings {
+    grid-area: 17 / 1 / 17 / 1;
+}
+.settingsimg {
+    width: 50%;
+}
+.gallery {
+    grid-area: 16 / 1 / 16 / 1;
+}
+.galleryimg {
+    width: 50%;
+}
+.file {
+    grid-area: 15 / 1 / 15 / 1;
+}
+.fileimg {
+    width: 50%;
+}
+.user {
+    grid-area: 14 / 1 / 14 / 1;
+}
+.userimg {
+    width: 50%;
+}
+.office {
+    display: grid;
+    grid-area: 2 / 8 / 5 / 11;
+}
+.officeimg {
+    width: 60%;
+    height: 60%;
+    justify-self: center;
+    align-self: center;
+}
+p {
+    position: absolute;
+    align-self: flex-end;    
+}
+.word {
+    grid-area: 2 / 12 / 2 / 13;
+}
+.wordimg {
+    width: 100%;
+}
+.wordd {
+    grid-area: 3 / 11 / 3 / 12;
+}
+.wordimg {
+    width: 100%;
+}
+.worddd {
+    grid-area: 3 / 13 / 3 / 14;
+}
+.wordimg {
+    width: 100%;
+}
+.excel {
+    grid-area: 2 / 11 / 2 / 12;
+}
+.excelimg {
+    width: 100%;
+}
+.exceld {
+    grid-area: 2 / 13 / 2 / 14;
+}
+
+.exceldd {
+    grid-area: 3 / 12 / 3 / 13;
+}
+.skype {
+    grid-area: 4 / 11 / 4 / 14;
+    background-color: blue;
+    display: grid;
+}
+.skypeimg {
+    width: 40px;
+    height: 40px;
+    justify-self: start;
+    align-self: center;
+}
