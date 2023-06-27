@@ -146,19 +146,35 @@ body {
     grid-area: 4 / 16 / 4 / 17;
     background-color: lightskyblue;
     display: grid;
+    width: 50%;
+    height: 50%;
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin-bottom: 3px;
 }
-.mailimg {
-    width: 60%;
+.pyahoo {
+    display: grid;
     justify-self: center;
     align-self: center;
+    position: absolute;
+}
+.mailimg {
+    width: 40%;
+    justify-self: flex-end;
+    align-self: flex-start;
+    margin: 0px;    
+}
+.pmail {
+    position: absolute;
+    justify-self: flex-start;
+    align-self: flex-end;
+    margin-bottom: 3px;
 }
 .yahoo {
-    grid-area: 2 / 14 / 4 / 17;
+    grid-area: 2 / 14 / 5 / 17;
     width: 100%;
     height: 100%;
     display: grid;
-    justify-content: center;
-    align-content: center;
     background-color: lightskyblue;
 }
 .textmail {
