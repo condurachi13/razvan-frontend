@@ -245,12 +245,16 @@ body {
 }
 .trigonometry {
     grid-area: 7 / 1 / 8 / 5;
+    width: 100%;
+    height: 100%;
     display: grid;
     justify-content: center;
     align-content: center;
 }
 .function {
     grid-area: 7 / 5 / 8 / 9;
+    width: 100%;
+    height: 100%;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -266,6 +270,10 @@ body {
 .gri:hover {
     background-color: rgb(111, 156, 201);
     color: white;
+}
+.extra:hover {
+    background-color: rgb(111, 156, 201);
+    color: white;    
 }
 .egal:hover {
     background-color: brown;
