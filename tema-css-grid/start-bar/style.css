@@ -4,6 +4,7 @@ body {
 }
 .main {
     display: grid;
+    gap: 5px;
     width: 100%;
     height: 100%;
     grid-template-columns: repeat(16, 1fr);
@@ -14,20 +15,29 @@ body {
     background-size: cover;
     overflow: hidden;
     background-blend-mode: lighten;
+    color: white;
     
 }
 .tabmenu {
+    /* justify-self: flex-end; */
+    /* align-self: flex-end; */
+    height: 15px;
     text-align: center;
-    align-self: self-end;
+    align-self: flex-end;
+    
+
 }
 .recently {
+    
+    height: 15px;
     text-align: start;
-    align-self: self-end;
+    align-self: flex-end;
     grid-area: 1 / 2 / 1 / 8;
 }
 .productivity {
+    height: 15px;
     text-align: start;
-    align-self: self-end;
+    align-self: flex-end;
     grid-area: 1 / 8 / 1 / 17;
 }
 .power {
@@ -71,40 +81,49 @@ body {
     justify-self: center;
     align-self: center;
 }
-p {
+.poffice {
     position: absolute;
     align-self: flex-end;    
+    margin-bottom: 3px;
+    padding-left: 10px;
 }
 .word {
     grid-area: 2 / 12 / 2 / 13;
-}
-.wordimg {
-    width: 100%;
+    display: grid;
 }
 .wordd {
     grid-area: 3 / 11 / 3 / 12;
-}
-.wordimg {
-    width: 100%;
+    display: grid;
 }
 .worddd {
     grid-area: 3 / 13 / 3 / 14;
+    display: grid;
 }
 .wordimg {
-    width: 100%;
+    width: 60%;
+    height: 60%;
+    justify-self: center;
+    align-self: center;
 }
 .excel {
     grid-area: 2 / 11 / 2 / 12;
+    display: grid;
 }
 .excelimg {
-    width: 100%;
+    width: 60%;
+    height: 60%;
+    justify-self: center;
+    align-self: center;
+
 }
 .exceld {
     grid-area: 2 / 13 / 2 / 14;
+    display: grid;
 }
 
 .exceldd {
     grid-area: 3 / 12 / 3 / 13;
+    display: grid;
 }
 .skype {
     grid-area: 4 / 11 / 4 / 14;
@@ -120,9 +139,12 @@ p {
 .mail {
     grid-area: 4 / 16 / 4 / 17;
     background-color: lightskyblue;
+    display: grid;
 }
 .mailimg {
-    width: 100%;
+    width: 60%;
+    justify-self: center;
+    align-self: center;
 }
 .yahoo {
     grid-area: 2 / 14 / 4 / 17;
@@ -138,8 +160,9 @@ p {
     width: 100%;
     height: 100%;
     display: grid;
-    align-content: center;
+    align-content: end;
     background-color: lightskyblue;
+    padding-left: 10px;
 
 }
 .explore {
@@ -163,6 +186,7 @@ p {
     position: absolute;
     align-self: flex-end;
     margin: 0px;
+    padding-left: 10px;
 }
 .photos {
     grid-area: 5 / 11 / 8 / 14;
@@ -182,13 +206,13 @@ p {
     position: absolute;
     align-self: flex-end;
     margin: 0px;
+    padding-left: 10px;
 }
 .edgeright {
     grid-area: 5 / 14 / 8 / 17;
     display: grid;
     padding-bottom: 3px;
     background-color: lightskyblue;
-
 }
 .edgerimg {
     width: 60%;
@@ -200,5 +224,172 @@ p {
     position: absolute;
     align-self: flex-end;
     margin: 0px;
+    padding-left: 10px;
 }
-
+.store {
+    grid-area: 9 / 8 / 12 / 11;
+    display: grid;
+    padding-bottom: 3px;
+    background-color: lightskyblue;
+}
+.storeimg {
+    width: 60%;
+    height: 60%;
+    justify-self: center;
+    align-self: center;
+}
+.weather {
+    grid-area: 9 / 11 / 12 / 14;
+    display: grid;
+    padding-bottom: 3px;
+    background-image: url(images/weather.jpg);
+    background-position: 1fr 1fr;
+}
+.weatherimg {
+    width: 1fr;
+    height: 1fr;
+    justify-self: center;
+    align-self: center;
+}
+.pweather {
+    position: absolute;
+    align-self: flex-end;
+    margin: 0px;
+    padding-left: 10px;
+}
+.cloudy {
+    position: absolute;
+    align-self: flex-start;
+    justify-self: center;
+}
+.gradestanga {
+    position: absolute;
+    align-self: center;
+    justify-self: flex-start;
+    margin-left: 2%;
+    font-size: x-large;
+}
+.gradedreapta {
+    position: absolute;
+    align-self: center;
+    justify-self: flex-end;
+    margin-right: 2%;
+}
+.news {
+    grid-area: 9 / 14 / 12 / 17;
+    display: grid;
+    background-color: red;
+}
+.newsimg {
+    width: 60%;
+    height: 60%;
+    justify-self: center;
+    align-self: center;
+}
+.solitaire {
+    grid-area: 12 / 8 / 15 / 11;
+    display: grid;
+    background-color: lightskyblue;
+}
+.solitaireimg {
+    width: 40%;
+    height: 40%;
+    justify-self: center;
+    align-self: center;
+}
+.psolitaire {
+    position: absolute;
+    align-self: flex-end;
+    margin: 0;
+    padding-bottom: 3px;
+    padding-left: 10px;
+}
+.netflix {
+    grid-area: 12 / 11 / 15 / 14;
+    display: grid;
+    background-color: black;
+}
+.netfliximg {
+    width: 60%;
+    height: 60%;
+    justify-self: center;
+    align-self: center;
+}
+.wordq {
+    grid-area: 12 / 14 / 13 / 15;
+    display: grid;
+}
+.wordqimg {
+    width: 60%;
+    height: 60%;
+    justify-self: center;
+    align-self: center;
+}
+.worddq {
+    grid-area: 13 / 15 / 14 / 16;
+    display: grid;
+}
+.wordddq {
+    grid-area: 12 / 16 / 13 / 17;
+    display: grid;
+}
+.excelq {
+    grid-area: 13 / 14 / 14 / 15;
+    display: grid;
+}
+.excelqimg {
+    width: 60%;
+    height: 60%;
+    justify-self: center;
+    align-self: center;
+}
+.exceldq {
+    grid-area: 12 / 15 / 13 / 16;
+    display: grid;
+}
+.excelddq {
+    grid-area: 13 / 16 / 14 / 17;
+    display: grid;
+}
+.play {
+    grid-area: 14 / 14 / 14 / 17;
+    background-color: lightskyblue;
+}
+.pplay {
+    padding-left: 10px;
+    display: grid;
+    position: absolute;
+}
+.realtek {
+    grid-area: 16 / 8 / 19 / 11;
+    display: grid;
+    background-color: lightskyblue;
+}
+.realtekimg {
+    width: 90%;
+    height: 90%;
+}
+.prealtek {
+    position: absolute;
+    align-self: flex-end;
+    margin: 0px;
+    padding-left: 10px;
+}
+.sol {
+    grid-area: 16 / 11 / 19 / 14;
+    background-color: lightskyblue;
+    display: grid;
+}
+.solimg {
+    width: 60%;
+    height: 60%;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+}
+.psol {
+    position: absolute;
+    align-self: flex-end;
+    margin: 0px;
+    padding-left: 10px;
+}
