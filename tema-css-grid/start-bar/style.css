@@ -1,14 +1,13 @@
 body {
-    width: 800px;
-    height: 800px;
+    width: 840px;
+    height: 985px;
 }
 .main {
     display: grid;
-    gap: 5px;
     width: 100%;
     height: 100%;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: 50px 300px 450px;
+    grid-template-rows: repeat(18, 50px);
     background: url(images/windowsbg.jpg);
     background-color: hwb(0 72% 28% / 0.452);
     background-repeat: no-repeat;
@@ -16,28 +15,55 @@ body {
     background-blend-mode: lighten;
     color: white;
 }
+.left {
+    display: grid;
+    grid-template-columns: 50px;
+    grid-template-rows: repeat(18, 1fr);
+    width: 50px;
+    height: 985px;
+}
+.middle {
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    grid-template-rows: repeat(50, 50px);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    height: 985px;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.right {
+    display: grid;
+    grid-template-columns: repeat(9, 50px);
+    grid-template-rows: repeat(18, 50px);
+    width: 450px;
+    height: 900px;
+    gap: 5px;
+}
 .tabmenu {
-    height: 15px;
+    height: 20px;
     text-align: center;
     align-self: flex-end;
     
 
 }
 .recently {
-    
     height: 15px;
     text-align: start;
+    top: 42px;
     align-self: flex-end;
-    grid-area: 1 / 2 / 1 / 8;
+    grid-area: 1 / 1 / 1 / 7;
 }
 .productivity {
     height: 15px;
     text-align: start;
     align-self: flex-end;
-    grid-area: 1 / 8 / 1 / 17;
+    grid-area: 1 / 1 / 1 / 9;
 }
 .power {
-    grid-area: 18 / 1 / 18 / 1;
+    grid-area: 18 / 1 / 19 / 1;
     display: grid;
     justify-items: center;
 }
@@ -53,7 +79,7 @@ body {
     width: 50%;
 }
 .gallery {
-    grid-area: 16 / 1 / 16 / 1;
+    grid-area: 16 / 1 / 17 / 1;
     display: grid;
     justify-items: center;
 }
@@ -61,7 +87,7 @@ body {
     width: 50%;
 }
 .file {
-    grid-area: 15 / 1 / 15 / 1;
+    grid-area: 15 / 1 / 16 / 1;
     display: grid;
     justify-items: center;
 }
@@ -69,7 +95,7 @@ body {
     width: 50%;
 }
 .user {
-    grid-area: 14 / 1 / 14 / 1;
+    grid-area: 14 / 1 / 15 / 1;
     display: grid;
     justify-items: center;
 }
@@ -78,7 +104,7 @@ body {
 }
 .office {
     display: grid;
-    grid-area: 2 / 8 / 5 / 11;
+    grid-area: 2 / 1 / 5 / 4;
     background-color: rgb(51, 51, 51);
 }
 .officeimg {
@@ -94,15 +120,15 @@ body {
     padding-left: 10px;
 }
 .word {
-    grid-area: 2 / 12 / 2 / 13;
+    grid-area: 2 / 4 / 3 / 5;
     display: grid;
 }
 .wordd {
-    grid-area: 3 / 11 / 3 / 12;
+    grid-area: 3 / 5 / 4 / 6;
     display: grid;
 }
 .worddd {
-    grid-area: 3 / 13 / 3 / 14;
+    grid-area: 2 / 6 / 3 / 7;
     display: grid;
 }
 .wordimg {
@@ -112,7 +138,7 @@ body {
     align-self: center;
 }
 .excel {
-    grid-area: 2 / 11 / 2 / 12;
+    grid-area: 2 / 5 / 3 / 6;
     display: grid;
 }
 .excelimg {
@@ -123,16 +149,16 @@ body {
 
 }
 .exceld {
-    grid-area: 2 / 13 / 2 / 14;
+    grid-area: 3 / 4 / 4 / 5;
     display: grid;
 }
 
 .exceldd {
-    grid-area: 3 / 12 / 3 / 13;
+    grid-area: 3 / 6 / 3 / 7;
     display: grid;
 }
 .skype {
-    grid-area: 4 / 11 / 4 / 14;
+    grid-area: 4 / 4 / 4 / 7;
     background-color: blue;
     display: grid;
 }
@@ -143,7 +169,7 @@ body {
     align-self: center;
 }
 .mail {
-    grid-area: 4 / 16 / 4 / 17;
+    grid-area: 4 / 9 / 4 / 10;
     background-color: lightskyblue;
     display: grid;
     width: 50%;
@@ -171,14 +197,14 @@ body {
     margin-bottom: 3px;
 }
 .yahoo {
-    grid-area: 2 / 14 / 5 / 17;
+    grid-area: 2 / 7 / 5 / 10;
     width: 100%;
     height: 100%;
     display: grid;
     background-color: lightskyblue;
 }
 .textmail {
-    grid-area: 4 / 14 / 4 / 16;
+    grid-area: 4 / 7 / 4 / 9;
     width: 100%;
     height: 100%;
     display: grid;
@@ -188,11 +214,11 @@ body {
 
 }
 .explore {
-    grid-area: 8 / 8 / 8 / 17;
+    grid-area: 8 / 1 / 8 / 10;
     align-self: center;
 }
 .edge {
-    grid-area: 5 / 8 / 8 / 11;
+    grid-area: 5 / 1 / 8 / 4;
     display: grid;
     padding-bottom: 3px;
     background-color: lightskyblue;
@@ -211,7 +237,7 @@ body {
     padding-left: 10px;
 }
 .photos {
-    grid-area: 5 / 11 / 8 / 14;
+    grid-area: 5 / 4 / 8 / 7;
     display: grid;
     padding-bottom: 3px;
     background-color: lightskyblue;
@@ -231,7 +257,7 @@ body {
     padding-left: 10px;
 }
 .edgeright {
-    grid-area: 5 / 14 / 8 / 17;
+    grid-area: 5 / 7 / 8 / 10;
     display: grid;
     padding-bottom: 3px;
     background-color: lightskyblue;
@@ -249,7 +275,7 @@ body {
     padding-left: 10px;
 }
 .store {
-    grid-area: 9 / 8 / 12 / 11;
+    grid-area: 9 / 1 / 12 / 4;
     display: grid;
     padding-bottom: 3px;
     background-color: lightskyblue;
@@ -261,7 +287,7 @@ body {
     align-self: center;
 }
 .weather {
-    grid-area: 9 / 11 / 12 / 14;
+    grid-area: 9 / 4 / 12 / 7;
     display: grid;
     padding-bottom: 3px;
     background-image: url(images/weather.jpg);
@@ -298,7 +324,7 @@ body {
     margin-right: 2%;
 }
 .news {
-    grid-area: 9 / 14 / 12 / 17;
+    grid-area: 9 / 7 / 12 / 10;
     display: grid;
     background-color: red;
 }
@@ -309,7 +335,7 @@ body {
     align-self: center;
 }
 .solitaire {
-    grid-area: 12 / 8 / 15 / 11;
+    grid-area: 12 / 1 / 15 / 4;
     display: grid;
     background-color: lightskyblue;
 }
@@ -327,7 +353,7 @@ body {
     padding-left: 10px;
 }
 .netflix {
-    grid-area: 12 / 11 / 15 / 14;
+    grid-area: 12 / 4 / 15 / 7;
     display: grid;
     background-color: black;
 }
@@ -338,7 +364,7 @@ body {
     align-self: center;
 }
 .wordq {
-    grid-area: 12 / 14 / 13 / 15;
+    grid-area: 12 / 7 / 13 / 8;
     display: grid;
 }
 .wordqimg {
@@ -348,15 +374,15 @@ body {
     align-self: center;
 }
 .worddq {
-    grid-area: 13 / 15 / 14 / 16;
+    grid-area: 13 / 8 / 14 / 9;
     display: grid;
 }
 .wordddq {
-    grid-area: 12 / 16 / 13 / 17;
+    grid-area: 12 / 9 / 13 / 10;
     display: grid;
 }
 .excelq {
-    grid-area: 13 / 14 / 14 / 15;
+    grid-area: 13 / 7 / 14 / 8;
     display: grid;
 }
 .excelqimg {
@@ -366,15 +392,15 @@ body {
     align-self: center;
 }
 .exceldq {
-    grid-area: 12 / 15 / 13 / 16;
+    grid-area: 12 / 8 / 13 / 9;
     display: grid;
 }
 .excelddq {
-    grid-area: 13 / 16 / 14 / 17;
+    grid-area: 13 / 9 / 14 / 10;
     display: grid;
 }
 .play {
-    grid-area: 14 / 14 / 14 / 17;
+    grid-area: 14 / 7 / 14 / 10;
     background-color: lightskyblue;
 }
 .pplay {
@@ -383,7 +409,7 @@ body {
     position: absolute;
 }
 .realtek {
-    grid-area: 16 / 8 / 19 / 11;
+    grid-area: 16 / 1 / 19 / 4;
     display: grid;
     background-color: lightskyblue;
 }
@@ -398,7 +424,7 @@ body {
     padding-left: 10px;
 }
 .sol {
-    grid-area: 16 / 11 / 19 / 14;
+    grid-area: 16 / 4 / 19 / 7;
     background-color: lightskyblue;
     display: grid;
 }
@@ -415,9 +441,11 @@ body {
     margin: 0px;
     padding-left: 10px;
 }
-/* .test {
-    grid-area: 19 / 2 / 22 / 2;
-    width: 200px;
-    height: 200px;
+.test {
+    grid-area: 25 / 1 / 26 / 7;
     background-color: red;
-} */
+}
+.testt {
+    grid-area: 18 / 1 / 19 / 7;
+    background-color: rgb(38, 17, 224);
+}
