@@ -57,3 +57,8 @@ footer {
         order: -1;
     }
 }
+@media print {
+    body * {
+        background-color: white;
+    }
+}
