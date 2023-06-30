@@ -1,3 +1,4 @@
+        /* Stilizarea */
 body {
     background-color: rgb(26, 63, 87);
     width: 100%;
@@ -24,4 +25,58 @@ body {
     background-color: rgb(26, 63, 87);
     border: 1px solid white;
 }
+.button:active {
+    background-color: rgba(173, 216, 230, 0.295);
+}
+       /* Stilizarea */
+
+       /* Animatia */
+.title {
+    animation-name: title;
+    animation-duration: 2000ms;
+    animation-delay: 20ms;
+    animation-direction: alternate;
+}
+.content {
+    animation-name: content;
+    animation-duration: 2000ms;
+    animation-delay: 20ms;
+    animation-direction: alternate;
+}
+.read-more {
+    animation-name: read-more;
+    animation-duration: 3400ms;
+    animation-delay: 40ms;
+    animation-direction: alternate;
+}
+@keyframes title {
+    0% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@keyframes content {
+    0% {
+        transform: translateX(-600px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes read-more {
+    0% {
+        opacity: 0%;
+    }
+    75% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+       /* Animatia */
+
+
 
