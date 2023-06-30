@@ -1,0 +1,76 @@
+.container {
+    width: 1000px;
+    height: 1000px;
+    background-color: rgb(13, 13, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dots-container {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.left, .middle, .right {
+    background-color: green;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.left {
+    animation-name: left;
+    animation-duration: 600ms;
+    animation-delay: 200ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+.middle {
+    animation-name: middle;
+    animation-duration: 600ms;
+    animation-delay: 400ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+.right {
+    animation-name: right;
+    animation-duration: 600ms;
+    animation-delay: 600ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+@keyframes left {
+    from {
+        margin-top: 30%;
+        /* display: flex; */
+    }
+    to {
+        margin-bottom: 30%;
+        /* display: block; */
+    }
+}
+@keyframes middle {
+    from {
+        margin-top: 30%;
+        /* display: flex; */
+    }
+    to {
+        margin-bottom: 30%;
+        /* display: block; */
+    }
+}
+@keyframes right {
+    from {
+        margin-top: 30%;
+        /* display: flex; */
+    }
+    to {
+        margin-bottom: 30%;
+        /* display: block; */
+    }
+}
