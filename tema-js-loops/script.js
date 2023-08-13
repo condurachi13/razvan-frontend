@@ -8,8 +8,8 @@ console.log(media)
 
 //
 
-let array = [56, "mere", false, 103, 250, "gutui"]
-let doarNumere = array.filter(Number);
+let sir = [56, "mere", false, 103, 250, "gutui"]
+let doarNumere = sir.filter(Number);
 let total = 0;
 for (let i = 0; i < doarNumere.length; i++) {
     total += doarNumere[i];
@@ -17,3 +17,14 @@ for (let i = 0; i < doarNumere.length; i++) {
 console.log(total);
 
 //
+ 
+function fibonacci(num) {
+    let array = [];
+    array[0] = 0;
+    array[1] = 1;
+    for (let i = 2; i < num; i++){
+        array[i] = array[i - 2] + array[i - 1];
+    } return array;
+}
+let num = 20;
+console.log(fibonacci(num))
