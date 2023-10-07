@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="name">
+      <div id="image"></div>
+    </div>
+    <script>
+      fetch("https://reqres.in/api/users")
+        .then((response) => response.json())
+        .then((data) => {
+          const nameElement = document.getElementById("name");
+          const imageDiv = document.getElementById("image");
+          data.data.forEach((person) => {
+            nameElement.textContent += `${person.first_name} `;
+            const img = document.createElement("img");
+            img.src = person.avatar;
+            img.alt = `${person.first_name} ${person.last_name}`;
+            nameElement.appendChild(imageDiv);
+            imageDiv.appendChild(img);
+          });
+        })
+        .catch((error) => console.log("Request failed", error));
+    </script>
+  </body>
+</html>
